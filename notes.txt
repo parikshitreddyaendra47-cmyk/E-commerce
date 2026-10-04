@@ -1,0 +1,89 @@
+Folder	Purpose
+data/	Raw/sample data
+src/	Python application/ETL code
+sql/	SQL scripts
+tests/	Automated tests
+docs/	Project documentation
+
+---------------------------------------------
+Step 1: Activate .venv
+
+In the VS Code terminal, run:
+
+.venv\Scripts\Activate.ps1
+
+You should see something like:
+
+(.venv) PS C:\Users\...\ecommerce-data-platform>
+
+That (.venv) confirms the virtual environment is active.
+
+If you get an execution-policy error, use:
+
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+Then activate again:
+
+.venv\Scripts\Activate.ps1
+
+This activation process is consistent with the troubleshooting guide you uploaded.
+
+Step 2: Select .venv in VS Code
+
+Press:
+
+Ctrl + Shift + P
+
+Search:
+
+Python: Select Interpreter
+
+Select:
+
+.venv\Scripts\python.exe
+
+Now VS Code will use the Python environment we created for this project.
+
+Step 3: Verify Python
+
+Run:
+
+python --version
+
+Then:
+
+where.exe python
+
+The where.exe python result should include something similar to:
+
+...\ecommerce-data-platform\.venv\Scripts\python.exe
+Step 4: Create our first Python file
+
+Inside:
+
+src/
+
+create:
+
+main.py
+
+Put this inside main.py:
+
+def main():
+    print("E-commerce Data Platform started!")
+
+
+if __name__ == "__main__":
+    main()
+
+Run it:
+
+python src/main.py
+
+Expected output:
+
+E-commerce Data Platform started!
+
+🎉 This is our first executable code in the project.
+
+---------------------------------------------------
