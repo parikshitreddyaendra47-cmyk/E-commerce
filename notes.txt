@@ -106,3 +106,18 @@ Once all of these are successful, tell me:
 
 "Phase 1 completed"
 ------------------------------------------------------
+ecommerce-data-platform/
+│
+├── .venv/
+│
+├── data/
+│   └── raw/
+│       ├── customers.csv
+│       ├── products.csv
+│       ├── orders.csv
+│       └── order_items.csv
+│
+├── src/
+├── sql/
+├── tests/
+└── docs/4

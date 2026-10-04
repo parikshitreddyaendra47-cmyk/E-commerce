@@ -32,3 +32,46 @@ An end-to-end data engineering and analytics platform for an e-commerce business
 
 Project initialization completed.
 
+--------------------------------------------------
+# KPI's
+Total Revenue
+= SUM(order_items.quantity × order_items.unit_price)
+
+Total Orders
+= COUNT(DISTINCT orders.order_id)
+
+Total Customers
+= COUNT(DISTINCT orders.customer_id)
+
+Average Order Value
+= Total Revenue / Total Orders
+
+Items Sold
+= SUM(order_items.quantity)
+
+Revenue per Customer
+= Total Revenue / Total Customers
+
+Cancellation Rate
+= Cancelled Orders / Total Orders
+
+Delivery Rate
+= Delivered Orders / Total Orders
+
+----------------------------------------------
+Your warehouse model can use these relationships:
+CUSTOMERS
+   │
+   │ customer_id
+   ▼
+ORDERS
+   │
+   │ order_id
+   ▼
+ORDER_ITEMS
+   │
+   │ product_id
+   ▼
+PRODUCTS
+---------------------------------------------------
+

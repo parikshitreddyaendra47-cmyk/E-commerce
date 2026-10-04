@@ -1,0 +1,6 @@
+customer_id,first_name,last_name,email,city,state,country,signup_date
+CUST001,Ava,Martin,ava.martin@example.com,Austin,Texas,USA,2024-01-15
+CUST002,Noah,Patel,noah.patel@example.com,Seattle,Washington,USA,2024-02-03
+CUST003,Mia,Garcia,mia.garcia@example.com,Miami,Florida,USA,2024-03-22
+CUST004,Liam,Chen,liam.chen@example.com,Denver,Colorado,USA,2024-05-11
+CUST005,Sophia,Johnson,sophia.johnson@example.com,Boston,Massachusetts,USA,2024-06-28

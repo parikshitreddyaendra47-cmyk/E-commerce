@@ -1,0 +1,7 @@
+order_id,customer_id,order_date,order_status,payment_status,shipping_status
+ORD1001,CUST001,2024-07-02,delivered,paid,delivered
+ORD1002,CUST003,2024-07-05,delivered,paid,delivered
+ORD1003,CUST002,2024-07-09,shipped,paid,in_transit
+ORD1004,CUST005,2024-07-12,processing,paid,pending
+ORD1005,CUST004,2024-07-14,cancelled,refunded,cancelled
+ORD1006,CUST001,2024-07-18,shipped,paid,in_transit
