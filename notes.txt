@@ -87,3 +87,22 @@ E-commerce Data Platform started!
 🎉 This is our first executable code in the project.
 
 ---------------------------------------------------
+I want you to complete these first:
+
+☐ Activate .venv
+☐ Select .venv in VS Code
+☐ Verify Python
+☐ Create src/main.py
+☐ Run main.py successfully
+☐ Create requirements.txt
+☐ Create .gitignore
+☐ Create README.md
+☐ git init
+☐ Configure Git
+☐ git add .
+☐ First commit
+
+Once all of these are successful, tell me:
+
+"Phase 1 completed"
+------------------------------------------------------
