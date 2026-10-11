@@ -137,3 +137,40 @@ python -m pip install pandas
 5. Create documentation file (i.e doc/data_quality_rules.md)
 
 6. RAW DATA(completed) → VALIDATION (completed) → (Next stage) STAGING → DIMENSIONS & FACTS → ANALYTICS
+
+profile_raw_data.py	Understand the raw datasets
+validate_raw_data.py	Check raw data quality and relationships
+data-quality-rules.md	Document the agreed data quality rules
+stage_data.py	Clean and prepare raw data for the next layer
+data/staging/	Store the cleaned staging outputs
+
+7.Stagging
+Step 4 — Important checks before using this in production
+This is a first staging implementation, not yet a complete production pipeline.
+- Your original checks compare order items against all raw orders. This version deliberately preserves that reference check, so an item referring to an order rejected for a missing customer could still pass the order-reference check. We should decide whether to reject such items too.
+- The script assumes quantity and unit_price are numeric. If your CSV columns contain non-numeric values, the comparisons can raise an error. We should inspect their types and define an explicit invalid-value policy.
+- Customer and product rows are currently copied into staging without additional row-level rejection rules.
+- The script doesn't yet detect duplicate business keys, enforce every documented quality rule, or make repeated runs transactional.
+
+8.Dimensions and Facts
+Step 1: Understand what we're building
+In our e-commerce project, the business wants to answer questions such as:
+- What is our total sales revenue?
+- Which products sell the most?
+- Which customers place the most orders?
+- How do sales change month by month?
+
+9.Get your SQL scripts
+I've prepared the four MySQL scripts for your project.
+
+01 — Create staging tables
+Creates the MySQL database and four tables for importing your staged CSVs.
+
+02 — Create dimensions
+Creates and populates customer, product, and date dimensions.
+
+03 — Create fact sales
+Builds the sales fact table and calculates sales amounts.
+
+04 — Validate the data model
+Checks row counts, unmatched order items, sales calculations, and sample analytics.
