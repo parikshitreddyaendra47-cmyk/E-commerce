@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # E-Commerce Data Engineering & Analytics Platform
 
 ## Overview
@@ -105,3 +106,6 @@ order_id
 product_id
 quantity
 unit_price
+=======
+# E-commerce
+>>>>>>> 00681cb84ef3b6a8113a35d686ea2db480911771
