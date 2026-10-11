@@ -121,3 +121,19 @@ ecommerce-data-platform/
 ├── sql/
 ├── tests/
 └── docs/4
+-----------------------------------------------
+Install pandas:
+1. Run VM:
+.venv\Scripts\Activate.ps1
+
+2.Install pandas: 
+Install pandas:
+python -m pip install pandas
+
+3. pandas code (to check duplicates i.e profile_raw_data.py)
+
+4. Validation data code ( to check validation results i.e validate_raw_data.py)
+
+5. Create documentation file (i.e doc/data_quality_rules.md)
+
+6. RAW DATA(completed) → VALIDATION (completed) → (Next stage) STAGING → DIMENSIONS & FACTS → ANALYTICS
